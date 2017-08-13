@@ -1,43 +1,57 @@
-
 $(document).ready(function() {
 
-var crystals = {
-    blue:{
-        name:"blue",
-        value:0
-    },
-    black:{
-        name:"black",
-        value:0
-    },
-    red:{
-        name:"red",
-        value: 0
-    },
-    green:{
-        name:"green",
-        value:0
+    var bluecrystal=0;
+    var greencrystal=0;
+    var redcrystal=0;
+    var blackcrystal=0;
+    var targetScore=0;
+    var wins=0;
+    var losses=0;
+    var totalScore=0;
+
+
+
+ //function generates a random for targetScore #
+    function randomTarget(){
+       return  targetScore=(Math.floor(Math.random()*120+10));
     }
-};
-
-var targetScore=0;
-var wins=0;
-var losses=0;
-var totalScore=0;
-var currentScore=0;
+    console.log(randomTarget())
+;
 
 
+    function randomCrystals(){
+        return (Math.ceil(Math.random()*12));
+    }
 
-//function generates a random #
-var randomNum=
-
-Math.floor(Math.random() * 100);
+    console.log(randomCrystals())
 
 //function to start the game
 
-function gameStart(
-    targetScore= randomNum() (min max)
-    crystals value
-    totalScore=0
-    currentScore=0
-)
+    function gameStart(){
+        bluecrystal=randomCrystals();
+        greencrystal=randomCrystals();
+        redcrystal=randomCrystals();
+        blackcrystal=randomCrystals();
+        targetScore=randomTarget();
+        totalScore=0;
+    }
+    console.log(gameStart())
+    
+//determines what button is clicked
+
+//if else statements
+
+// if (currentScore===targetScore){
+//     wins++;
+//     gameStart;
+//     } else if {
+//     (currentScore!==targetScore){
+    
+
+    
+//     }else {
+//     (currentScore>targetScore);
+//     losses++;
+//     gameStart;
+
+})
