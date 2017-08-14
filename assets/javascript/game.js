@@ -22,8 +22,8 @@ $(document).ready(function() {
     function randomCrystals(){
         return (Math.ceil(Math.random()*12));
     }
-
     console.log(randomCrystals())
+
 
 //function to start the game
 
@@ -36,8 +36,12 @@ $(document).ready(function() {
         totalScore=0;
     }
     console.log(gameStart())
-    
+   
 //determines what button is clicked
+    $(".crystals").on("click",function(){
+        alert("you clicked a crystal");
+
+    })
 
 //if else statements
 
@@ -53,5 +57,6 @@ $(document).ready(function() {
 //     (currentScore>targetScore);
 //     losses++;
 //     gameStart;
+
 
 })

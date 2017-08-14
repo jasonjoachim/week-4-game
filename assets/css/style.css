@@ -1,11 +1,10 @@
 body {
     font-family: 'Alfa Slab One', cursive;
+    text-align: center;
 }
 .crystals img{
-    width:25%;
-    
+    width:20%;  
 }
 
 
 
-}
